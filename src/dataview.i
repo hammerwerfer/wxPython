@@ -791,12 +791,14 @@ public:
     wxDataViewItemAttr();
     ~wxDataViewItemAttr();
 
+    void SetBackgroundColour(const wxColour& colour);
     void SetColour(const wxColour& colour);
     void SetBold( bool set );
     void SetItalic( bool set );
 
     bool HasColour() const;
     const wxColour GetColour() const;
+    const wxColour GetBackgroundColour() const;
 
     bool HasFont() const;
     bool GetBold() const;
@@ -810,6 +812,7 @@ public:
     %property(Colour, GetColour, SetColour);
     %property(Bold, GetBold, SetBold);
     %property(Italic, GetItalic, SetItalic);
+    %property(BackgroundColour, GetBackgroundColour, SetBackgroundColour);
 };
 
 //---------------------------------------------------------------------------

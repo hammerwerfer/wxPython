@@ -330,6 +330,10 @@ class DataViewItemAttr(object):
         _dataview.DataViewItemAttr_swiginit(self,_dataview.new_DataViewItemAttr(*args, **kwargs))
     __swig_destroy__ = _dataview.delete_DataViewItemAttr
     __del__ = lambda self : None;
+    def SetBackgroundColour(*args, **kwargs):
+        """SetBackgroundColour(self, Colour colour)"""
+        return _dataview.DataViewItemAttr_SetBackgroundColour(*args, **kwargs)
+
     def SetColour(*args, **kwargs):
         """SetColour(self, Colour colour)"""
         return _dataview.DataViewItemAttr_SetColour(*args, **kwargs)
@@ -349,6 +353,10 @@ class DataViewItemAttr(object):
     def GetColour(*args, **kwargs):
         """GetColour(self) -> Colour"""
         return _dataview.DataViewItemAttr_GetColour(*args, **kwargs)
+
+    def GetBackgroundColour(*args, **kwargs):
+        """GetBackgroundColour(self) -> Colour"""
+        return _dataview.DataViewItemAttr_GetBackgroundColour(*args, **kwargs)
 
     def HasFont(*args, **kwargs):
         """HasFont(self) -> bool"""
@@ -373,6 +381,7 @@ class DataViewItemAttr(object):
     Colour = property(GetColour,SetColour) 
     Bold = property(GetBold,SetBold) 
     Italic = property(GetItalic,SetItalic) 
+    BackgroundColour = property(GetBackgroundColour,SetBackgroundColour) 
 _dataview.DataViewItemAttr_swigregister(DataViewItemAttr)
 
 #---------------------------------------------------------------------------
